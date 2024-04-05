@@ -5,7 +5,7 @@ const cors = require("cors")
 const rendezsRouter = require("./routes/rendezsRouter")
 app.use(
 	cors({
-		origin: "http://127.0.0.1:5501",
+		origin: "https://cliniquerrahma.ma/",
 	})
 )
 app.use(express.json())
