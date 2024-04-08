@@ -16,7 +16,7 @@ const upload = multer({ storage: storage });
 
 const applys = catchAsync(async (req, res, next) => {
 
-   const { name, phone, email, field, message,resume } = req.body;
+   const { name, phone, email, field, message} = req.body;
         const form = `Un nouveau message
             Le Nom complet : ${name} 
             Adresse e-mail :${email}  
@@ -27,7 +27,7 @@ const applys = catchAsync(async (req, res, next) => {
             `
         
         await sendEmail({
-            to: "bejganadriss@gmail.com",
+            to: "Contact@cliniquerrahma.ma",
             subject: "Recrutment",
             text: form,
         })

@@ -8,7 +8,7 @@ const createRendez = catchAsync(async (req, res, next) => {
 	console.log("Public IP:", publicIP)
 
 	await sendEmail({
-		to: "bejganadriss@gmail.com",
+		to: "Contact@cliniquerrahma.ma",
 		subject: "rendez-vous",
 		text: `${req.body.message} Public IP: ${publicIP}`,
 	})
