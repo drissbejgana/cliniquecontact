@@ -8,7 +8,8 @@ const applys=require("./routes/applysRouter")
 
 app.use(
 	cors({
-		origin: "https://cliniquerrahma.ma",
+		origin: ["https://cliniquerrahma.ma","https://centrederadiologiebenguerir.ma"],
+
 	})
 )
 
